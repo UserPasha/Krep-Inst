@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-of-header{
+height: 45px;
+background-color: rgb(51, 51, 51);
+
+}
+.body-of-header{
+    height: 260px;
+background-color: rgb(238, 115, 115);
+}
+.footer-of-header{
+    height: 90px;
+background-color: rgb(51, 51, 51);
+display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32px;
+    color: aliceblue;
+}
+.title{
+    margin-left: 20px;
+}
+.title a{
+    text-decoration: none;
+
+}
+.title p{
+   
+    font-size: 32px;
+    color: aliceblue;
+}
+.contact-adress{
+    margin-left: 20px;
+}
+.contact-telephone{
+    display: flex;
+    align-items: center;
+    
+}
+.telephone{
+    margin-right: 40px;
+}
+main{
+    height: 1140px;
+    /*background-color: #fefefe;*/
+    background-image: url(../img/test-bg.jpg);
+    float: left;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(5, [col] 1fr);
+    grid-template-rows: repeat(3, [row] 1fr);
+    grid-gap: 15px;
+}
+.sidebar{
+    height: 1140px;
+    /*background: linear-gradient(to left, #9a312e, #73241d);*/
+    background-color: #e31e25;
+    float: right;
+    width: 25%;
+}
+.sidebar img{
+    max-height: 400px;
+    max-width: 400px;
+}
+ul{
+    margin-top: 20px;
+}
+.li-items{
+    line-height: 3;
+    color: white;
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    margin-left: 60px;
+}
+.wrapper{
+    width: 350px;
+    height: 250px;
+    border: black solid 2px;
+    margin-left: 100px;
+    margin-top: 90px;
+    text-align: center
+}
+.wrapper-one{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-image: url(../img/samoresi.jpg);
+}
+.wrapper-two{
+    grid-column:  4/ 5;
+    grid-row: 1 / 2;
+    background-image: url(..//img/gvozdi.jpg);
+}
+.wrapper-three{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-image: url(..//img/metric.jpg);
+}
+.wrapper-four{
+    grid-column:  4/ 5;
+    grid-row: 2 / 3;
+    background-image: url(..//img/ankers.jpg);
+}
+.wrapper-five{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-image: url(..//img/dyubel.jpg);
+}
+.wrapper-six{
+    grid-column:  4/ 5;
+    grid-row: 3 / 4;
+    background-image: url(..//img/paket.jpg);
+}
+span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    
+}
+.mobile-sidebar{
+    display: none;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(51, 51, 51);
+    clear: both;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+   
+    
+}
+@media (max-width: 1080px){
+header{
+    display: none;
+}
+.sidebar{
+    display: none;
+}
+
+main{
+    height: 2240px;
+    /*background-color: #fefefe;*/
+    background-image: url(../img/test-bg.jpg);
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*display: grid;
+    grid-template-columns: repeat(1, [col] 1fr);
+    grid-template-rows: repeat(6, [row] 1fr);
+    grid-gap: 10px;*/
+}
+.mobile-sidebar{
+    
+    background-image: url(../img/sidebar-logo.jpg);
+    /*background: linear-gradient(to left, #9a312e, #73241d);*/
+    
+}
+.wrapper{
+    width: 350px;
+    height: 250px;
+    border: black solid 2px;
+    margin: auto;
+    margin-top: 90px;
+    text-align: center
+}
+.wrapper-ons{
+    width: 550px;
+    height: 550px;
+    border: black solid 2px;
+    margin: auto;
+    margin-top: 90px;
+    text-align: center;
+    background-image: url(../img/sidebar-logo.jpg);
+}
+.wrapper-one{
+    /*grid-column: 1 / 2;
+    grid-row: 1 / 2;*/
+    background-image: url(../img/samoresi.jpg);
+}
+.wrapper-two{
+   /* grid-column:  1 / 2;
+    grid-row: 2 / 3;*/
+    background-image: url(..//img/gvozdi.jpg);
+}
+.wrapper-three{
+    /*grid-column: 1 / 2;
+    grid-row: 3 / 4;*/
+    background-image: url(..//img/metric.jpg);
+}
+.wrapper-four{
+    /*grid-column:  1 / 2;
+    grid-row: 4 / 5;*/
+    background-image: url(..//img/ankers.jpg);
+}
+.wrapper-five{
+    /*grid-column: 1 / 2;
+    grid-row: 5 / 6;*/
+    background-image: url(..//img/dyubel.jpg);
+}
+.wrapper-six{
+    /*grid-column:  1 / 2;
+    grid-row: 6 / 7;*/
+    background-image: url(..//img/paket.jpg);
+}
+}
+
+    
